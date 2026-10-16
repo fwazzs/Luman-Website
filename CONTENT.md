@@ -4,8 +4,8 @@ Copy this into `src/data/site.ts` as typed data. The text is final (English, app
 
 ## Meta
 
-- Title: `Lumen · Group 3 · Design Thinking`
-- Description: `Lumen is a user-centered AI learning platform. This is Group 3's Design Thinking project: problem, team, and every phase so far.`
+- Title: `Lumen · Group 2 · Design Thinking`
+- Description: `Lumen is a user-centered AI learning platform. This is Group 2's Design Thinking project: problem, team, and every phase so far.`
 - `robots: noindex` (see PRD §6, privacy)
 
 ## Header
@@ -86,7 +86,7 @@ Data shape stays the same; add it when testing is done (PRD FR2).
 ## Footer
 
 - Logo: ASCII mark (`aria-label="Lumen logo"`) + wordmark `lumen`
-- Bottom bar: `© LUMEN · GROUP 3 · DESIGN THINKING` · `WEBSITE BY GROUP 3`
+- Bottom bar: `© LUMEN · GROUP 2 · DESIGN THINKING` · `WEBSITE BY GROUP 2`
 
 ## Brand voice (for any new copy)
 

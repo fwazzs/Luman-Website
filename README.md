@@ -1,8 +1,8 @@
-# Lumen — Group 3 project website
+# Lumen — Group 2 project website
 
-A one-page site for Group 3's Design Thinking project, **Lumen**: a user-centered AI learning platform. It covers the problem, the team, and every Design Thinking phase so far, with links to the documents.
+A one-page site for Group 2's Design Thinking project, **Lumen**: a user-centered AI learning platform. It covers the problem, the team, and every Design Thinking phase so far, with links to the documents.
 
-Status: design approved, build not started.
+Live: https://lumen-group-2.vercel.app (deployed on Vercel; every merge to `main` goes to production).
 
 ```bash
 npm install

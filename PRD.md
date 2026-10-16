@@ -1,4 +1,4 @@
-# PRD — Lumen, Group 3 project website
+# PRD — Lumen, Group 2 project website
 
 **Status:** Design approved 2026-10-16 · Build not started
 **Design source:** [Claude Design canvas](https://claude.ai/artifact/S5HXEpQWm6jxG2p5dKVnFn), artboard "Website kelompok: halaman proyek" (mirrored in `design/canvas/GroupSite.dc.html`)
@@ -6,7 +6,7 @@
 
 ## 1. Summary
 
-A one-page English website for **Group 3's Design Thinking project, Lumen**. Lumen is a user-centered AI learning platform for students and fresh graduates. The site tells the project's story: the problem and point of view, the team, and the four Design Thinking phases completed so far, with a link to every document the team produced. The lecturer requires a website; the reference format is a Stanford CS147 project page (About, Team, Design Process, Prototypes).
+A one-page English website for **Group 2's Design Thinking project, Lumen**. Lumen is a user-centered AI learning platform for students and fresh graduates. The site tells the project's story: the problem and point of view, the team, and the four Design Thinking phases completed so far, with a link to every document the team produced. The lecturer requires a website; the reference format is a Stanford CS147 project page (About, Team, Design Process, Prototypes).
 
 ## 2. Goals
 
@@ -32,7 +32,7 @@ A one-page English website for **Group 3's Design Thinking project, Lumen**. Lum
 3. **About Project** (`#about`). Two columns: "Problem Domain" paragraph and "Point of View" statement with the key phrase highlighted.
 4. **Our Team** (`#team`). Horizontal accordion of six tall portrait cards (pattern from the Lovable "creative photographer" template). Hover, focus or click expands a card; the expanded card shows name and student ID. Anastasia's card starts open.
 5. **Design Thinking Process** (`#process`). "Stack" layout from sui.io ("The stack autonomous systems run on"): a dotted center timeline with a rose progress line and a square end marker; four phase cards alternate right and left. Each card has a numbered header, an animated isometric illustration, a summary and a footer list of document links joined to the number box by connector lines.
-6. **Footer.** Full logo: a donut.c-style rotating ASCII render of the Lumen mark (spins on its own while on screen) next to the large "lumen" wordmark. Bottom bar: "© LUMEN · GROUP 3 · DESIGN THINKING" and "WEBSITE BY GROUP 3".
+6. **Footer.** Full logo: a donut.c-style rotating ASCII render of the Lumen mark (spins on its own while on screen) next to the large "lumen" wordmark. Bottom bar: "© LUMEN · GROUP 2 · DESIGN THINKING" and "WEBSITE BY GROUP 2".
 
 All copy is in `CONTENT.md`.
 
