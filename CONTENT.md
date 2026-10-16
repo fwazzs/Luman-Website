@@ -33,7 +33,7 @@ h2: `Our Team` · group `aria-label="Team members"` · default open: index 1 (An
 | # | Name | Student ID | Photo | Focus (object-position) | Zoom | Tint |
 |---|---|---|---|---|---|---|
 | 0 | Alfaira M. | 5026261221 | `team/alfaira.jpg` | 48% 42% | 1 | #0B3446 |
-| 1 | Anastasia A. | 5026261173 | null | 50% 20% | 1 | #64113F |
+| 1 | Anastasia A. | 5026261173 | `team/anastasia.jpg` | 55% 40% | 1 | #64113F |
 | 2 | Ezar H. | 5026261086 | `team/ezar.jpg` | 62% 42% | 1 | #163F52 |
 | 3 | Muhammad M. | 5026261098 | `team/muhammad.jpg` | 52% 32% | 1 | #4A0F30 |
 | 4 | Naufal R. | 5026261197 | `team/naufal-yellow.jpg` | 50% 48% | 1.5 | #0B3446 |
