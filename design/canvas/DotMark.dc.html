@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Lumen dot mark</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0}
+.dm-row{display:flex}
+.dm-cell{display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.dm-tw{animation:dm-tw 2.6s ease-in-out infinite}
+.dm-d1{animation-delay:.9s}.dm-d2{animation-delay:1.7s}
+@keyframes dm-tw{50%{opacity:.45}}
+@media (prefers-reduced-motion: reduce){.dm-tw{animation:none}}
+</style>
+</helmet>
+<div role="img" aria-label="Logo Lumen" style="{{rootStyle}}">
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="32">
+<div class="dm-row"><sc-for list="{{r.cells}}" as="c" hint-placeholder-count="32"><span class="dm-cell" style="{{cellStyle}}"><span class="{{c.cls}}" style="{{c.style}}"></span></span></sc-for></div>
+</sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"n":{"editor":"int","default":32,"min":8,"max":48},"cell":{"editor":"int","default":14,"min":1,"max":40},"shape":{"editor":"enum","options":["dot","pixel"],"default":"dot"},"ring":{"editor":"color","default":"#011C27","options":["#F7CACD","#011C27","#FFFFFF"]},"texture":{"editor":"boolean","default":true},"twinkle":{"editor":"boolean","default":true},"$preview":{"width":448,"height":448}}'>
+class Component extends DCLogic {
+renderVals() {
+const p = this.props || {};
+const n = Number(p.n ?? 32), cell = Number(p.cell ?? 14);
+const shape = p.shape ?? 'dot', ring = p.ring ?? '#011C27';
+const texture = String(p.texture ?? true) !== 'false', twinkle = String(p.twinkle ?? true) !== 'false';
+const key = [n, cell, shape, ring, texture, twinkle].join('|');
+if (this._key === key) return this._vals;
+const ROSE = '#DE4D86', S = 48 / n, sub = 4;
+const ang = (x, y) => Math.atan2(y - 24, x - 24) * 180 / Math.PI;
+const capA = [-15, -75].map((a) => [24 + 16 * Math.cos(a * Math.PI / 180), 24 + 16 * Math.sin(a * Math.PI / 180)]);
+const region = (x, y) => {
+if (Math.hypot(x - 24, y - 24) <= 6) return 2;
+if (Math.hypot(x - 35.3, y - 12.7) <= 3) return 2;
+const r = Math.hypot(x - 24, y - 24), a = ang(x, y);
+if (r >= 13.5 && r <= 18.5 && !(a > -75 && a < -15)) return 1;
+if (capA.some(([cx, cy]) => Math.hypot(x - cx, y - cy) <= 2.5)) return 1;
+return 0;
+};
+const rows = [];
+for (let i = 0; i < n; i++) {
+const cells = [];
+for (let j = 0; j < n; j++) {
+let hit = 0, kind = 0;
+for (let a = 0; a < sub; a++) for (let b = 0; b < sub; b++) {
+const k = region((j + (b + 0.5) / sub) * S, (i + (a + 0.5) / sub) * S);
+if (k) { hit++; kind = Math.max(kind, k); }
+}
+const cov = hit / (sub * sub), h = ((i * 73856093) ^ (j * 19349663)) >>> 0;
+let style = 'display: block;', cls = '';
+if (shape === 'pixel') {
+if (cov >= 0.45) style += 'width: ' + cell + 'px; height: ' + cell + 'px; background: ' + (kind === 2 ? ROSE : ring) + ';';
+} else if (cov > 0.08) {
+const d = Math.max(2, Math.round(cell * 0.86 * Math.sqrt(cov)));
+style += 'width: ' + d + 'px; height: ' + d + 'px; border-radius: 50%; background: ' + (kind === 2 ? ROSE : ring) + ';';
+if (kind === 2 && twinkle) cls = 'dm-tw dm-d' + (h % 3);
+} else if (texture) {
+const d = Math.max(1, Math.round(cell * 0.16));
+style += 'width: ' + d + 'px; height: ' + d + 'px; border-radius: 50%; background: ' + ring + '; opacity: 0.22;';
+}
+cells.push({ style, cls });
+}
+rows.push({ cells });
+}
+const size = n * cell;
+this._key = key;
+this._vals = { rows, rootStyle: 'width: ' + size + 'px; height: ' + size + 'px;', cellStyle: 'width: ' + cell + 'px; height: ' + cell + 'px;' };
+return this._vals;
+}
+}
+</script>
+</body>
+</html>

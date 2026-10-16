@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lumen, group project website</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#F7CACD}a:hover{color:#EE6F9F}
+.dt-flow{animation:dtflow 1.4s linear infinite}
+@keyframes dtflow{to{stroke-dashoffset:-16}}
+.dt-float{animation:dtfloat 3.2s ease-in-out infinite}
+@keyframes dtfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.dt-blink{animation:dtblink 3s ease-in-out infinite}
+@keyframes dtblink{0%,100%{opacity:.8}50%{opacity:.15}}
+.dt-pulse{transform-box:fill-box;transform-origin:center;animation:dtpulse 2.4s ease-in-out infinite}
+@keyframes dtpulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.9);opacity:.35}}
+.dt-sink{animation:dtsink 4s ease-in-out infinite}
+@keyframes dtsink{0%,100%{transform:translateY(-8px);opacity:.25}50%{transform:translateY(6px);opacity:.9}}
+.dt-lift{animation:dtlift 3.6s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes dtlift{0%,15%,85%,100%{transform:translateY(0)}45%,55%{transform:translateY(-16px)}}
+.dt-d1{animation-delay:.6s}.dt-d2{animation-delay:1.2s}.dt-d3{animation-delay:1.8s}.dt-d4{animation-delay:2.4s}
+@media (prefers-reduced-motion: reduce){.dt-flow,.dt-float,.dt-blink,.dt-pulse,.dt-sink,.dt-lift{animation:none}}
+</style>
+</helmet>
+<div style="background: #011C27; color: #F7CACD; font-family: 'JetBrains Mono', monospace; font-size: 15px; line-height: 1.55">
+
+<header style="border-bottom: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+<a href="#top" aria-label="Lumen, back to top" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<dc-import name="DotMark" n="16" cell="2" shape="pixel" ring="#F7CACD" texture="false" twinkle="false" hint-size="32px,32px"></dc-import>
+<span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; letter-spacing: -0.055em; color: #FFFFFF">lumen</span>
+</a>
+
+</div>
+</header>
+
+<section id="top" style="position: relative; overflow: hidden; min-height: 760px; display: flex; align-items: center; justify-content: center">
+<video class="hero-video" aria-hidden="true" src="/_blob/d71e8a5860bf734720c15eb3b33010be" autoplay="" muted="" loop="" playsinline="" preload="auto" ref="{{videoRef}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #011C27"></video>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(ellipse 50% 45% at 50% 50%, rgba(1,28,39,0.6) 0%, rgba(1,28,39,0) 80%)"></div>
+<div style="position: relative; max-width: 1100px; padding: 120px 24px; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center">
+
+<h1 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(3.5rem, 10vw, 8.5rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.92; color: #FFFFFF; width: 1202px; max-width: calc(100vw - 32px)">User-Centered<br>AI Learning Platform</h1>
+<span style="margin-top: -8px; font-size: clamp(0.95rem, 1.4vw, 1.15rem); font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #F29CA3">Everyone can learn AI</span>
+
+
+</div>
+</section>
+
+<section style="border-bottom: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))">
+
+
+
+
+</div>
+</section>
+
+<section id="about" style="border-bottom: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2.25rem, 4.5vw, 3.5rem); font-weight: 800; letter-spacing: -0.045em; color: #FFFFFF">About Project</h2>
+
+</div>
+<div style="max-width: 1280px; margin: 40px auto 0; display: flex; flex-wrap: wrap; border-top: 1px solid rgba(247,202,205,0.18)">
+<div style="flex: 1 1 400px; min-width: 0; padding: 48px 32px 56px 24px; border-right: 1px solid rgba(247,202,205,0.18); display: flex; flex-direction: column; gap: 18px">
+<span style="font-size: 13px; letter-spacing: 0.06em; color: rgba(247,202,205,0.72)">Problem Domain</span>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; line-height: 1.6">AI is moving faster than anyone expected, some jobs are already being taken over, and many people don't know where to start learning. We assumed they needed a roadmap. After six interviews, we found they already use AI every day. What they haven't learned yet is how to judge whether its output is correct and safe.</p>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; padding: 48px 24px 56px 32px; display: flex; flex-direction: column; gap: 18px">
+<span style="font-size: 13px; letter-spacing: 0.06em; color: #EE6F9F">POINT OF VIEW</span>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(1.3rem, 2.4vw, 1.75rem); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; color: #FFFFFF">Students and fresh graduates who fear being replaced by AI need to <span style="color: #EE6F9F">build the ability to direct and check AI's work</span>, because their fear makes them avoid AI, even though that ability is what protects the junior roles being cut.</p>
+</div>
+</div>
+</section>
+
+<section id="team" style="border-bottom: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2.25rem, 4.5vw, 3.5rem); font-weight: 800; letter-spacing: -0.045em; color: #FFFFFF">Our Team</h2>
+
+</div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 24px 96px; overflow-x: auto">
+<div role="group" aria-label="Team members" style="display: flex; gap: 12px; height: 520px; min-width: 640px">
+<sc-for list="{{team}}" as="m" hint-placeholder-count="6">
+<button type="button" aria-expanded="{{m.open}}" aria-label="{{m.label}}" onClick="{{m.pick}}" onMouseEnter="{{m.pick}}" onFocus="{{m.pick}}" style="{{m.style}}">
+<span aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(247,202,205,0.28) 1.2px, transparent 1.4px); background-size: 10px 10px"></span>
+<sc-if value="{{m.hasPhoto}}" hint-placeholder-val="{{false}}">
+<img src="{{m.photo}}" alt="" style="{{m.photoStyle}}">
+</sc-if>
+<sc-if value="{{m.noPhoto}}" hint-placeholder-val="{{true}}">
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 44%; transform: translate(-50%, -50%); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 96px; font-weight: 800; letter-spacing: -0.06em; color: rgba(255,255,255,0.9)">{{m.initials}}</span>
+</sc-if>
+<sc-if value="{{m.isOpen}}" hint-placeholder-val="{{false}}">
+<span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 48px 24px 22px; background: linear-gradient(rgba(1,28,39,0), rgba(1,28,39,0.85)); display: flex; flex-direction: column; gap: 4px; text-align: left"><span style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; color: #FFFFFF">{{m.name}}</span>
+<span style="font-size: 13px; letter-spacing: 0.04em; color: #F7CACD">Student ID {{m.nrp}}</span>
+</span>
+</sc-if>
+</button>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="process" style="border-bottom: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2.25rem, 5vw, 4rem); font-weight: 800; letter-spacing: -0.05em; line-height: 1.02; color: #FFFFFF; max-width: 760px">Design Thinking Process</h2>
+</div>
+
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 48px 24px 120px">
+<span aria-hidden="true" style="position: absolute; left: 50%; top: 0; bottom: 120px; width: 0; border-left: 2px dotted rgba(247,202,205,0.35)"></span>
+<span aria-hidden="true" style="position: absolute; left: calc(50% - 1px); top: 48px; bottom: 160px; width: 2px; background: #DE4D86"></span>
+<span aria-hidden="true" style="position: absolute; left: calc(50% - 6px); bottom: 154px; width: 12px; height: 12px; background: #FFFFFF"></span>
+
+<div style="position: relative; display: flex; flex-direction: column; gap: 56px">
+
+<div style="display: flex; justify-content: flex-end">
+<article id="empathize" style="width: min(100%, 580px); background: #04202D; border: 1px solid rgba(247,202,205,0.25)">
+<div style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid rgba(247,202,205,0.18)">
+<span style="width: 34px; height: 34px; flex: 0 0 34px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45); font-size: 14px; background: #04202D">01</span>
+<span style="flex: 1 1 auto; min-width: 0; font-size: 15px; font-weight: 700; color: #FFFFFF">Empathize · needfinding</span>
+<span style="font-size: 11px; letter-spacing: 0.06em; padding: 4px 8px; border: 1px solid rgba(247,202,205,0.45)">DONE</span>
+</div>
+<div style="position: relative; padding: 24px 24px 28px 64px; display: flex; flex-direction: column; gap: 16px">
+<span aria-hidden="true" style="position: absolute; left: 36px; top: 0; bottom: 0; width: 1px; background: rgba(247,202,205,0.35)"></span>
+<svg viewBox="0 0 240 150" width="240" height="150" aria-hidden="true" fill="none" stroke="#F7CACD" stroke-width="1.2" style="align-self: center; max-width: 100%"><path class="dt-blink" d="M60 50 L84 40 L108 50 L84 60 Z"></path><path class="dt-blink dt-d1" d="M132 50 L156 40 L180 50 L156 60 Z"></path><path class="dt-blink dt-d2" d="M96 80 L120 70 L144 80 L120 90 Z"></path><path class="dt-blink dt-d3" d="M24 80 L48 70 L72 80 L48 90 Z"></path><path class="dt-blink dt-d4" d="M168 80 L192 70 L216 80 L192 90 Z"></path><path class="dt-flow" d="M84 60 V100 M156 60 V100 M48 90 V120 M192 90 V120" stroke-dasharray="3 5" stroke-opacity="0.45"></path><g class="dt-float"><path d="M96 110 L120 100 L144 110 L120 120 Z" fill="#DE4D86" stroke="#DE4D86"></path><path d="M120 90 V100" stroke="#DE4D86"></path></g></svg>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; line-height: 1.55">Six interviews: three high school students, one undergraduate, one fresh graduate, and one professional as an extreme user.</p>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-style: italic; font-size: 17px; line-height: 1.5; color: #FFFFFF">“I really don't look things up... but once someone shows me, then I want to.” <span style="font-style: normal; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(247,202,205,0.72)">— Bryan</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; font-size: 12px; letter-spacing: 0.04em">
+<span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">DEMITRIA</span><span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">NALA</span><span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">FIKRI</span><span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">BRYAN</span><span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">KAYLA</span><span style="border: 1px solid rgba(247,202,205,0.3); padding: 4px 8px">ALVIN</span>
+</div>
+</div>
+<div style="border-top: 1px solid rgba(247,202,205,0.18); padding: 0 20px 14px 36px; display: flex; flex-direction: column">
+<a href="https://claude.ai/code/artifact/c3b399f9-171d-45a0-8cff-e681bc260812" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><path d="M4 1.5h5.5L12 4v10.5H4z M6 7h4 M6 10h4"></path></svg></span><span style="flex: 1 1 auto">Transcripts of 6 interviews</span><span aria-hidden="true">↗</span></a>
+<a href="https://www.figma.com/board/su30qyl06stQpmEOYajpys/Empathy-Map" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><path d="M2 2h5v5H2z M9 2h5v5H9z M2 9h5v5H2z M9 9h5v5H9z"></path></svg></span><span style="flex: 1 1 auto">Team empathy map (FigJam)</span><span aria-hidden="true">↗</span></a>
+<a href="https://claude.ai/artifact/PYn9KAaganBCSjfztuRR8Z" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid #DE4D86; background: #DE4D86"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#011C27" stroke-width="1.6"><path d="M3 8h10 M9 4l4 4-4 4"></path></svg></span><span style="flex: 1 1 auto">Empathy map + synthesis</span><span aria-hidden="true">↗</span></a>
+</div>
+</article>
+</div>
+
+<div style="display: flex; justify-content: flex-start">
+<article id="define" style="width: min(100%, 580px); background: #04202D; border: 1px solid rgba(247,202,205,0.25)">
+<div style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid rgba(247,202,205,0.18)">
+<span style="width: 34px; height: 34px; flex: 0 0 34px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45); font-size: 14px; background: #04202D">02</span>
+<span style="flex: 1 1 auto; min-width: 0; font-size: 15px; font-weight: 700; color: #FFFFFF">Define · insight, persona &amp; POV</span>
+<span style="font-size: 11px; letter-spacing: 0.06em; padding: 4px 8px; border: 1px solid rgba(247,202,205,0.45)">DONE</span>
+</div>
+<div style="position: relative; padding: 24px 24px 28px 64px; display: flex; flex-direction: column; gap: 16px">
+<span aria-hidden="true" style="position: absolute; left: 36px; top: 0; bottom: 0; width: 1px; background: rgba(247,202,205,0.35)"></span>
+<svg viewBox="0 0 240 150" width="240" height="150" aria-hidden="true" fill="none" stroke="#F7CACD" stroke-width="1.2" style="align-self: center; max-width: 100%"><path class="dt-sink" d="M120 20 L210 52 L120 84 L30 52 Z" stroke-dasharray="4 4"></path><path class="dt-sink dt-d2" d="M120 46 L180 68 L120 90 L60 68 Z"></path><path d="M120 72 L150 84 L120 96 L90 84 Z" fill="#DE4D86" stroke="#DE4D86"></path><path class="dt-flow" d="M30 52 L90 84 M210 52 L150 84 M120 96 V136" stroke-dasharray="3 5" stroke-opacity="0.45"></path><circle class="dt-pulse" cx="120" cy="136" r="4" fill="#DE4D86" stroke="none"></circle></svg>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700; line-height: 1.4; color: #FFFFFF">Students and fresh graduates who fear being replaced by AI need to <span style="color: #EE6F9F">build the ability to direct and check AI's work</span>.</p>
+<div style="display: flex; flex-direction: column; gap: 8px; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.5">
+<span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #EE6F9F">INSIGHT · </span>The career risk is in judging AI output, not in prompting.</span>
+<span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #EE6F9F">INSIGHT · </span>Fear of being replaced makes people avoid AI instead of learning it.</span>
+<span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #EE6F9F">PERSONA · </span>Dinda, 18, a vocational software-engineering student who builds projects for clients.</span>
+</div>
+</div>
+<div style="border-top: 1px solid rgba(247,202,205,0.18); padding: 0 20px 14px 36px; display: flex; flex-direction: column">
+<a href="#" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><circle cx="8" cy="5.5" r="2.5"></circle><path d="M3 14c0-3 2.2-5 5-5s5 2 5 5"></path></svg></span><span style="flex: 1 1 auto">Persona Dinda</span><span style="font-size: 11px; color: rgba(247,202,205,0.72)">[LINK]</span></a>
+<a href="#" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid #DE4D86; background: #DE4D86"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#011C27" stroke-width="1.6"><path d="M8 2v9 M4 7l4 4 4-4 M3 14h10"></path></svg></span><span style="flex: 1 1 auto">Written report: POV &amp; HMW</span><span style="font-size: 11px; color: rgba(247,202,205,0.72)">[LINK]</span></a>
+</div>
+</article>
+</div>
+
+<div style="display: flex; justify-content: flex-end">
+<article id="ideate" style="width: min(100%, 580px); background: #04202D; border: 1px solid rgba(247,202,205,0.25)">
+<div style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid rgba(247,202,205,0.18)">
+<span style="width: 34px; height: 34px; flex: 0 0 34px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45); font-size: 14px; background: #04202D">03</span>
+<span style="flex: 1 1 auto; min-width: 0; font-size: 15px; font-weight: 700; color: #FFFFFF">Ideate · from 25 ideas to one site</span>
+<span style="font-size: 11px; letter-spacing: 0.06em; padding: 4px 8px; border: 1px solid rgba(247,202,205,0.45)">DONE</span>
+</div>
+<div style="position: relative; padding: 24px 24px 28px 64px; display: flex; flex-direction: column; gap: 16px">
+<span aria-hidden="true" style="position: absolute; left: 36px; top: 0; bottom: 0; width: 1px; background: rgba(247,202,205,0.35)"></span>
+<svg viewBox="0 0 240 150" width="240" height="150" aria-hidden="true" fill="none" stroke="#F7CACD" stroke-width="1.2" style="align-self: center; max-width: 100%"><path class="dt-blink" d="M40 40 L56 34 L72 40 L56 46 Z"></path><path class="dt-blink dt-d3" d="M88 30 L104 24 L120 30 L104 36 Z"></path><path class="dt-blink dt-d1" d="M150 36 L166 30 L182 36 L166 42 Z"></path><path class="dt-blink dt-d4" d="M196 52 L212 46 L228 52 L212 58 Z"></path><path class="dt-blink dt-d2" d="M20 76 L36 70 L52 76 L36 82 Z"></path><path class="dt-blink dt-d4" d="M64 66 L80 60 L96 66 L80 72 Z"></path><path class="dt-blink dt-d3" d="M176 84 L192 78 L208 84 L192 90 Z"></path><path class="dt-blink dt-d1" d="M30 112 L46 106 L62 112 L46 118 Z"></path><path class="dt-blink dt-d2" d="M188 120 L204 114 L220 120 L204 126 Z"></path><path class="dt-flow" d="M56 46 L104 74 M166 42 L136 74 M80 72 L104 92 M192 90 L136 98" stroke-dasharray="3 5" stroke-opacity="0.4"></path><g class="dt-float"><path d="M104 74 L120 68 L136 74 L120 80 Z M120 92 L136 86 L152 92 L136 98 Z M88 92 L104 86 L120 92 L104 98 Z" fill="#DE4D86" stroke="#DE4D86"></path></g></svg>
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-family: 'Plus Jakarta Sans', sans-serif; color: #FFFFFF">
+<span style="font-size: 28px; font-weight: 800; letter-spacing: -0.04em">~40 HMW</span><span style="color: rgba(247,202,205,0.72)">→</span><span style="font-size: 28px; font-weight: 800; letter-spacing: -0.04em">~25 ideas</span><span style="color: rgba(247,202,205,0.72)">→</span><span style="font-size: 28px; font-weight: 800; letter-spacing: -0.04em; color: #EE6F9F">3 chosen</span>
+</div>
+<p style="margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; line-height: 1.55">The chosen ideas were checked again against four criteria: they build the ability to judge AI output, spread from person to person, turn fear into practice, and can be tested with a cheap prototype.</p>
+</div>
+<div style="border-top: 1px solid rgba(247,202,205,0.18); padding: 0 20px 14px 36px; display: flex; flex-direction: column">
+<a href="https://www.canva.com/design/DAHWoTog-2A" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><path d="M2 3h8v6H2z M6 9v4 M10 6h4v7H8"></path></svg></span><span style="flex: 1 1 auto">Brainstorming canvas (Canva)</span><span aria-hidden="true">↗</span></a>
+<a href="#" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid #DE4D86; background: #DE4D86"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#011C27" stroke-width="1.6"><path d="M8 2v9 M4 7l4 4 4-4 M3 14h10"></path></svg></span><span style="flex: 1 1 auto">HMW list &amp; voting results</span><span style="font-size: 11px; color: rgba(247,202,205,0.72)">[LINK]</span></a>
+</div>
+</article>
+</div>
+
+<div style="display: flex; justify-content: flex-start">
+<article id="prototype" style="width: min(100%, 580px); background: #04202D; border: 1px solid rgba(247,202,205,0.25)">
+<div style="display: flex; align-items: center; gap: 14px; padding: 14px 20px; border-bottom: 1px solid rgba(247,202,205,0.18)">
+<span style="width: 34px; height: 34px; flex: 0 0 34px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45); font-size: 14px; background: #04202D">04</span>
+<span style="flex: 1 1 auto; min-width: 0; font-size: 15px; font-weight: 700; color: #FFFFFF">Prototype · three parts, one product</span>
+<span style="font-size: 11px; letter-spacing: 0.06em; padding: 4px 8px; border: 1px solid rgba(247,202,205,0.45)">DONE</span>
+</div>
+<div style="position: relative; padding: 24px 24px 28px 64px; display: flex; flex-direction: column; gap: 16px">
+<span aria-hidden="true" style="position: absolute; left: 36px; top: 0; bottom: 0; width: 1px; background: rgba(247,202,205,0.35)"></span>
+<svg viewBox="0 0 240 150" width="240" height="150" aria-hidden="true" fill="none" stroke="#F7CACD" stroke-width="1.2" style="align-self: center; max-width: 100%"><path class="dt-flow" d="M120 80 L200 108 L120 136 L40 108 Z" stroke-dasharray="4 4" stroke-opacity="0.5"></path><path class="dt-flow" d="M40 60 V108 M200 60 V108 M120 88 V136" stroke-dasharray="3 5" stroke-opacity="0.5"></path><path d="M120 56 L200 84 L120 112 L40 84 Z" stroke-opacity="0.75"></path><g class="dt-lift"><path d="M120 32 L200 60 L120 88 L40 60 Z" fill="#DE4D86" stroke="#DE4D86"></path><path d="M100 54 L140 68 M92 62 L128 75" stroke="#011C27" stroke-width="2.2"></path></g></svg>
+<div style="display: flex; flex-direction: column; gap: 1px; background: rgba(247,202,205,0.18); border: 1px solid rgba(247,202,205,0.18); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.45">
+<div style="background: #04202D; padding: 12px 14px"><b style="color: #FFFFFF">Level quiz</b> · places your level instead of picking a career for you</div>
+<div style="background: #04202D; padding: 12px 14px"><b style="color: #FFFFFF">AI Handbook</b> · AI terms plus what to check</div>
+<div style="background: #04202D; padding: 12px 14px"><b style="color: #FFFFFF">Step-by-step path</b> · use it first, then understand it, with practice at every level</div>
+</div>
+</div>
+<div style="border-top: 1px solid rgba(247,202,205,0.18); padding: 0 20px 14px 36px; display: flex; flex-direction: column">
+<a href="#" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><path d="M4 1.5h5.5L12 4v10.5H4z M6 7h4 M6 10h4"></path></svg></span><span style="flex: 1 1 auto">PROTOTYPE DT document</span><span style="font-size: 11px; color: rgba(247,202,205,0.72)">[LINK]</span></a>
+<a href="#" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="position: absolute; left: 0; top: 50%; bottom: 0; border-left: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(247,202,205,0.45)"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#F7CACD" stroke-width="1.4"><path d="M1.5 4h3l1.5-2h4l1.5 2h3v9.5h-13z"></path><circle cx="8" cy="8.5" r="2.5"></circle></svg></span><span style="flex: 1 1 auto">A3 prototype photos</span><span style="font-size: 11px; color: rgba(247,202,205,0.72)">[LINK]</span></a>
+<a href="Quiz.dc.html" style="position: relative; display: flex; align-items: center; gap: 12px; min-height: 52px; padding-left: 28px; text-decoration: none; font-size: 14px"><span aria-hidden="true" style="position: absolute; left: 0; top: 0; height: 50%; width: 20px; border-left: 1px solid rgba(247,202,205,0.35); border-bottom: 1px solid rgba(247,202,205,0.35)"></span><span aria-hidden="true" style="width: 32px; height: 32px; flex: 0 0 32px; display: flex; align-items: center; justify-content: center; border: 1px solid #DE4D86; background: #DE4D86"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#011C27" stroke-width="1.6"><path d="M3 8h10 M9 4l4 4-4 4"></path></svg></span><span style="flex: 1 1 auto">Try the quiz prototype</span><span aria-hidden="true">→</span></a>
+</div>
+</article>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+<footer style="border-top: 1px solid rgba(247,202,205,0.18); overflow: hidden">
+<div style="max-width: 1280px; margin: 0 auto; padding: 80px 24px 56px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px 56px">
+<div role="img" aria-label="Lumen logo" onMouseEnter="{{spinStart}}" onMouseLeave="{{spinStop}}" style="position: relative; flex: 0 0 auto; max-width: 100%; cursor: grab">
+<pre aria-hidden="true" style="margin: 0; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(4.5px, 1.9vw, 11px); line-height: 1; letter-spacing: 0; color: #F7CACD">{{logoRing}}</pre>
+<pre aria-hidden="true" style="position: absolute; inset: 0; margin: 0; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(4.5px, 1.9vw, 11px); line-height: 1; letter-spacing: 0; color: #DE4D86">{{logoDots}}</pre>
+</div>
+<div style="flex: 0 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 18px"><span style="font-family: &quot;Plus Jakarta Sans&quot;, sans-serif; font-size: clamp(5rem, 15vw, 13rem); font-weight: 800; letter-spacing: -0.065em; line-height: 0.8; color: rgb(255, 255, 255)">lumen</span></div>
+</div>
+<div style="border-top: 1px solid rgba(247,202,205,0.18)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; letter-spacing: 0.04em; color: rgba(247,202,205,0.72)">
+<span>© LUMEN · GROUP 3 · DESIGN THINKING</span>
+<span>WEBSITE BY GROUP 3</span>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+renderVals() {
+const team = ['Alfaira M.', 'Anastasia A.', 'Ezar H.', 'Muhammad M.', 'Naufal R.', 'Jessica K.']
+  .map((name, i) => {
+    const open = (this.state && this.state.member !== undefined ? this.state.member : 1) === i;
+    const tint = ['#0B3446', '#64113F', '#163F52', '#4A0F30', '#0B3446', '#64113F'][i];
+    // Cut-out portraits (green screen removed); add each member's upload here.
+    const photo = ['', '', '/_blob/ca8ad6789faa0ab0c736a17c6553f10b', '/_blob/55af3e3ac5737804bf62e3a6e10c6f24', '/_blob/6c432389c22fd9667d195b65eaa963a5', ''][i];
+    // Where each face sits in its photo, so narrow cards still show it.
+    const focus = ['50% 20%', '50% 20%', '62% 42%', '52% 32%', '48% 36%', '50% 20%'][i];
+    return {
+      name,
+      photo,
+      photoStyle: 'position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: ' + focus + '; transform-origin: ' + focus + '; transform: scale(' + [1, 1, 1, 1, 1.7, 1][i] + ');',
+      hasPhoto: !!photo,
+      noPhoto: !photo,
+      nrp: ['5026261221', '5026261173', '5026261086', '5026261098', '5026261197', '5026261031'][i],
+      initials: name.split(' ').map((w) => w[0]).join(''),
+      label: name + ', student ID ' + ['5026261221', '5026261173', '5026261086', '5026261098', '5026261197', '5026261031'][i],
+      open: open ? 'true' : 'false',
+      isOpen: open,
+      pick: () => this.setState({ member: i }),
+      style: 'position: relative; overflow: hidden; border: none; padding: 0; cursor: pointer; border-radius: 24px; background: ' + tint + '; min-width: 96px; transition: flex-grow 0.5s ease; flex: ' + (open ? 3.5 : 1) + ' 1 0;',
+    };
+  });
+const TERMS = [
+  ['Hallucination', 'An AI answer that sounds confident but is wrong or made up.', 'Bryan almost gave up when the AI kept giving fixes that did not work.', 'Run the code, check the source, and ask the AI where it got that from.'],
+  ['Token', 'A small piece of text the AI reads and writes. Usage limits are counted in tokens.', 'Demitria picks a lighter model for schoolwork so her quota lasts longer.', 'Match the model to the task. Light tasks do not need the biggest model.'],
+  ['Context', 'Everything the AI sees when it answers: your message, files, chat history.', 'Demitria and Nala both found that detailed prompts get more accurate answers.', 'Send only what is relevant, such as the error message, not the whole codebase.'],
+  ['Prompt', 'The instruction you give the AI.', 'Nala asks for hints and the logic instead of asking the AI to do it for him.', 'Ask the AI to explain its reasoning so you keep thinking for yourself.'],
+  ['Agent', 'AI that takes steps on its own: reading a project, editing files, running commands.', 'Bryan switched to an agent IDE that reads his whole project.', 'Review every change. An agent can patch the symptom instead of the root cause.'],
+  ['RAG', 'The AI looks up documents first, then answers based on them.', 'Even an expert interviewee mixed up RAG and fine-tuning.', 'RAG adds knowledge at answer time. Fine-tuning changes the model itself.'],
+];
+const picked = this.state && this.state.picked !== undefined ? this.state.picked : 0;
+const base = "font-family: 'JetBrains Mono', monospace; font-size: 14px; letter-spacing: 0.04em; min-height: 44px; padding: 0 16px; cursor: pointer;";
+const terms = TERMS.map(([label], i) => ({
+  label: label.toUpperCase(),
+  pressed: i === picked ? 'true' : 'false',
+  style: base + (i === picked
+    ? 'font-weight: 700; color: #011C27; background: #DE4D86; border: 1px solid #DE4D86;'
+    : 'color: #F7CACD; background: transparent; border: 1px solid rgba(247,202,205,0.45);'),
+  pick: () => this.setState({ picked: i }),
+}));
+const [, mean, seen, check] = TERMS[picked];
+const logo = this.lumenFrame(this.state && this.state.spin !== undefined ? this.state.spin : 0.6);
+return { team, terms, def: { mean, seen, check }, videoRef: this.videoRef, logoRing: logo.ring, logoDots: logo.dots, spinStart: () => this.spinStart(), spinStop: () => this.spinStop() };
+}
+// The logo spins only while hovered and keeps the angle where it stopped.
+spinStart() {
+const still = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (still || this._spin) return;
+// ponytail: re-renders the whole artboard ~16x/s while hovered; move the logo into its own child DC if that lags.
+this._spin = setInterval(() => this.setState({ spin: ((this.state && this.state.spin) || 0.6) + 0.06 }), 60);
+}
+spinStop() {
+clearInterval(this._spin);
+this._spin = null;
+}
+componentWillUnmount() {
+clearInterval(this._spin);
+}
+lumenFrame(t) {
+// donut.c-style ASCII render of the Lumen mark: an open torus with a gap at the upper right,
+// rounded ends, a centre sphere and a spark sphere in the gap. Ring and dots come back as two
+// text layers so they can be coloured cotton and rose.
+const W = 72, H = 36, R2 = 2, R1 = 0.55, K2 = 7, K1 = W * K2 * 3 / (8 * (R2 + R1 + 0.4));
+const L = '.,-~:;=!*#$@';
+const zb = new Float32Array(W * H), ch = new Array(W * H).fill(' '), kind = new Uint8Array(W * H);
+const cA = Math.cos(t), sA = Math.sin(t), B = 0.35 * Math.sin(t * 0.6), cB = Math.cos(B), sB = Math.sin(B);
+const plot = (x, y, z, nx, ny, nz, k) => {
+  const x1 = x * cA + z * sA, z1 = -x * sA + z * cA, y2 = y * cB - z1 * sB, z2 = y * sB + z1 * cB;
+  const nz1 = -nx * sA + nz * cA, ny2 = ny * cB - nz1 * sB, nz2 = ny * sB + nz1 * cB;
+  const ooz = 1 / (z2 + K2);
+  const px = Math.round(W / 2 + K1 * ooz * x1), py = Math.round(H / 2 - K1 * ooz * y2 * 0.5);
+  if (px < 0 || px >= W || py < 0 || py >= H) return;
+  const i = px + py * W;
+  if (ooz <= zb[i]) return;
+  zb[i] = ooz;
+  const lum = ny2 * 0.7071 - nz2 * 0.7071;
+  ch[i] = L[Math.max(0, Math.min(11, Math.round((lum + 0.15) * 8)))];
+  kind[i] = k;
+};
+const sphere = (cx, cy, rad, k) => {
+  for (let th = 0; th < 3.1416; th += 0.06) for (let p = 0; p < 6.283; p += 0.06) {
+    const nx = Math.sin(th) * Math.cos(p), ny = Math.cos(th), nz = Math.sin(th) * Math.sin(p);
+    plot(cx + rad * nx, cy + rad * ny, rad * nz, nx, ny, nz, k);
+  }
+};
+for (let p = 0; p < 6.283; p += 0.018) {
+  const deg = p * 180 / Math.PI;
+  if (deg > 15 && deg < 75) continue;
+  const cp = Math.cos(p), sp = Math.sin(p);
+  for (let th = 0; th < 6.283; th += 0.07) {
+    const ct = Math.cos(th), st = Math.sin(th), r = R2 + R1 * ct;
+    plot(r * cp, r * sp, R1 * st, ct * cp, ct * sp, st, 1);
+  }
+}
+for (const deg of [15, 75]) sphere(R2 * Math.cos(deg * Math.PI / 180), R2 * Math.sin(deg * Math.PI / 180), R1, 1);
+sphere(0, 0, 0.78, 2);
+sphere(R2 * Math.SQRT1_2, R2 * Math.SQRT1_2, 0.36, 2);
+let ring = '', dots = '';
+for (let y = 0; y < H; y++) {
+  for (let x = 0; x < W; x++) {
+    const i = x + y * W;
+    ring += kind[i] === 1 ? ch[i] : ' ';
+    dots += kind[i] === 2 ? ch[i] : ' ';
+  }
+  ring += '\n';
+  dots += '\n';
+}
+return { ring, dots };
+}
+videoRef(el) {
+// React does not set the muted attribute, and browsers only autoplay muted video.
+if (!el) return;
+el.muted = true;
+const p = el.play && el.play();
+if (p && p.catch) p.catch(() => {});
+}
+}
+</script>
+</body>
+</html>

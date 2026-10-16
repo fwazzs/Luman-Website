@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Design tokens — mirror DESIGN.md and the canvas (Lumen "dot direction"). Dark only: the brand is light on ink. */
+@theme {
+  --color-ink: #011c27;
+  --color-ink-raised: #04202d;
+  --color-cotton: #f7cacd;
+  --color-rose: #de4d86;
+  /* Rose used as text on ink (passes AA); plain rose is for fills only. */
+  --color-rose-text: #ee6f9f;
+  --color-candy: #f29ca3;
+  --color-violet: #64113f;
+  --color-plum: #4a0f30;
+  --color-teal-deep: #0b3446;
+  --color-teal-mid: #163f52;
+
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  /* Phase illustration motion (DESIGN.md › Illustration animations) → animate-dt-* utilities. */
+  --animate-dt-flow: dt-flow 1.4s linear infinite;
+  --animate-dt-float: dt-float 3.2s ease-in-out infinite;
+  --animate-dt-blink: dt-blink 3s ease-in-out infinite;
+  --animate-dt-pulse: dt-pulse 2.4s ease-in-out infinite;
+  --animate-dt-sink: dt-sink 4s ease-in-out infinite;
+  --animate-dt-lift: dt-lift 3.6s cubic-bezier(0.5, 0, 0.3, 1) infinite;
+
+  @keyframes dt-flow { to { stroke-dashoffset: -16; } }
+  @keyframes dt-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes dt-blink { 0%, 100% { opacity: 0.8; } 50% { opacity: 0.15; } }
+  @keyframes dt-pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.9); opacity: 0.35; } }
+  @keyframes dt-sink { 0%, 100% { transform: translateY(-8px); opacity: 0.25; } 50% { transform: translateY(6px); opacity: 0.9; } }
+  @keyframes dt-lift { 0%, 15%, 85%, 100% { transform: translateY(0); } 45%, 55% { transform: translateY(-16px); } }
+
+  /* One-shot fade-up for the hero tagline and pause button. */
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  @keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+}
+
+/* Shared reveal motion: one easing and duration for every scroll-in, so the page moves as one system. */
+@utility reveal-ease {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  transition-duration: 700ms;
+}
+
+/* Halftone dots behind team cards */
+@utility bg-halftone {
+  background-image: radial-gradient(rgb(247 202 205 / 0.28) 1.2px, transparent 1.4px);
+  background-size: 10px 10px;
+}
+
+/* Soft dark pool behind the hero headline so it reads over the video */
+@utility bg-hero-scrim {
+  background-image: radial-gradient(ellipse 50% 45% at 50% 50%, rgb(1 28 39 / 0.6) 0%, rgb(1 28 39 / 0) 80%);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-ink);
+    color-scheme: dark;
+  }
+
+  /* One focus ring for every interactive element (WCAG 2.4.7). */
+  :focus-visible {
+    outline: 2px solid var(--color-rose);
+    outline-offset: 3px;
+  }
+}

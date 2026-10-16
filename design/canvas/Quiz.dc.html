@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Lumen level quiz</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; padding: 28px 24px 32px; background: #F7CACD; color: #011C27; font-family: 'Plus Jakarta Sans', sans-serif; display: flex; flex-direction: column; gap: 22px">
+
+<div style="display: flex; align-items: center; justify-content: space-between">
+<button type="button" aria-label="Kembali" style="width: 44px; height: 44px; border-radius: 999px; border: none; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#011C27" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"></path></svg></button>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em">QUIZ LEVEL · 3/6</span>
+<svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true"><path d="M39.76 17.63 A17 17 0 1 1 30.37 8.24" fill="none" stroke="#011C27" stroke-width="7" stroke-linecap="round"></path><circle cx="24" cy="24" r="7.5" fill="#DE4D86"></circle></svg>
+</div>
+
+<div style="height: 10px; background: #FFFFFF; border-radius: 999px"><div style="width: 50%; height: 100%; background: #DE4D86; border-radius: 999px"></div></div>
+
+<h1 style="margin: 12px 0 0; font-size: 30px; font-weight: 800; letter-spacing: -0.035em; line-height: 1.15">Waktu AI memberi jawaban, apa yang biasanya kamu lakukan?</h1>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{options}}" as="o" hint-placeholder-count="4">
+<button type="button" aria-pressed="{{o.pressed}}" onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+</sc-for>
+</div>
+
+<div style="flex-grow: 1"></div>
+<button type="button" style="font-family: inherit; font-size: 17px; font-weight: 700; color: #FFFFFF; background: #011C27; border: none; border-radius: 999px; padding: 18px; cursor: pointer">Lanjut</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+const labels = ['Langsung kupakai', 'Kucek dulu bagian yang ragu', 'Kuminta AI menjelaskan alasannya', 'Belum pernah pakai AI'];
+const picked = this.state && this.state.picked !== undefined ? this.state.picked : 1;
+const base = 'font-family: inherit; text-align: left; font-size: 17px; border-radius: 20px; padding: 18px 20px; cursor: pointer; min-height: 60px;';
+return {
+options: labels.map((label, i) => ({
+label,
+pressed: i === picked ? 'true' : 'false',
+style: base + (i === picked
+? 'font-weight: 700; color: #F7CACD; background: #011C27; border: 1.5px solid #011C27;'
+: 'font-weight: 600; color: #011C27; background: #FFFFFF; border: 1.5px solid #FFFFFF;'),
+pick: () => this.setState({ picked: i }),
+})),
+};
+}
+}
+</script>
+</body>
+</html>
