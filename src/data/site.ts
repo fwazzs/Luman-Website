@@ -4,9 +4,9 @@ import type { SiteContent } from '@/types';
 
 export const SITE: SiteContent = {
   meta: {
-    title: 'Lumen · Group 3 · Design Thinking',
+    title: 'Lumen · Group 2 · Design Thinking',
     description:
-      "Lumen is a user-centered AI learning platform. This is Group 3's Design Thinking project: problem, team, and every phase so far.",
+      "Lumen is a user-centered AI learning platform. This is Group 2's Design Thinking project: problem, team, and every phase so far.",
   },
 
   hero: {
@@ -126,7 +126,7 @@ export const SITE: SiteContent = {
   },
 
   footer: {
-    copyright: '© LUMEN · GROUP 3 · DESIGN THINKING',
-    credit: 'WEBSITE BY GROUP 3',
+    copyright: '© LUMEN · GROUP 2 · DESIGN THINKING',
+    credit: 'WEBSITE BY GROUP 2',
   },
 };

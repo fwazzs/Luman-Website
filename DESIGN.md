@@ -114,7 +114,7 @@ Two columns (`flex-wrap`, each `basis-[400px]`), divided by a vertical rule. Lef
   - While the logo is on screen, `t` advances by about 1 rad/s, drawn at up to 30fps. It stops off-screen and then resumes from the same angle.
   - Drive it with `requestAnimationFrame` and write `pre.textContent` through refs, so React never re-renders.
   - Under reduced motion it never spins.
-- **Bottom bar:** a `cotton/18` rule, then "© LUMEN · GROUP 3 · DESIGN THINKING" on the left and "WEBSITE BY GROUP 3" on the right, 13px mono at `cotton/72`.
+- **Bottom bar:** a `cotton/18` rule, then "© LUMEN · GROUP 2 · DESIGN THINKING" on the left and "WEBSITE BY GROUP 2" on the right, 13px mono at `cotton/72`.
 
 ## Accessibility
 

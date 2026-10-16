@@ -18,7 +18,7 @@ describe('safeHref', () => {
 
 describe('safeEmail', () => {
   it('accepts a plain address and rejects parameter injection', () => {
-    expect(safeEmail('group3@its.ac.id')).toBe('group3@its.ac.id');
+    expect(safeEmail('group2@its.ac.id')).toBe('group2@its.ac.id');
     expect(safeEmail('a@b.id?bcc=x@y.z')).toBeNull();
     expect(safeEmail('not an email')).toBeNull();
   });

@@ -1,10 +1,10 @@
-# CLAUDE.md — Lumen, Group 3 project website
+# CLAUDE.md — Lumen, Group 2 project website
 
 The parent `D:\AI\Project\CLAUDE.md` applies too (stack rules, git workflow, security, performance baselines). This file covers what is specific to this project. The sibling `D:\AI\Project\Design-Thinking-Class-Website` is a finished site with the same stack and patterns; copy its setup (Next config, CSP, `useFrame`, `useReducedMotion`, `safeUrl`, Vitest) instead of reinventing it.
 
 ## Overview
 
-A one-page English site for Group 3's Design Thinking project, **Lumen** ("User-Centered AI Learning Platform"). Sections, in order: header, hero (video), About Project, Our Team (accordion), Design Thinking Process (Sui-style stack), footer (ASCII logo).
+A one-page English site for Group 2's Design Thinking project, **Lumen** ("User-Centered AI Learning Platform"). Sections, in order: header, hero (video), About Project, Our Team (accordion), Design Thinking Process (Sui-style stack), footer (ASCII logo).
 
 | What | Where |
 |---|---|
@@ -90,6 +90,14 @@ src/
   - **Process:** the stack layout follows sui.io. Test is hidden until done. Every phase card links to its documents.
   - **Footer:** a donut.c-style ASCII logo. Under it, only the wordmark (the tagline lines were removed by the user). The logo was hover-only at first; per later user feedback it spins on its own while on screen, and stops off-screen and under reduced motion.
   - **Folder name:** the project folder is `Luman`, but the product name is **Lumen**.
+  - **Group number is 2, not 3.** The first build said "Group 3" because the Obsidian interview notes list "Group 3" as an interviewer, which was wrongly taken as the team's number. Fixed everywhere (site copy, docs, design mirror). Don't derive the team's identity from interview notes.
+  - **Deploy:**
+    - **Hosting:** GitHub repo `fwazzs/Luman-Website` (private), deployed on Vercel as project `lumen-group-2` (team `fwaz-s-projects`), production URL https://lumen-group-2.vercel.app.
+    - **Auto-deploy:** the repo is connected, so every merge to `main` deploys to production.
+    - **Renamed project:** it was `luman-website`, whose default address got a Vercel-added `-three` suffix. That read like "group 3", so the project was renamed and the old domain removed.
+    - **`.vercel/` is git-ignored.**
+    - **Initial push:** the first commit went straight to `main` because the repo was empty. After that, follow the parent rule: branch, then PR.
+    - **Windows gotcha:** in Git Bash, `vercel api /v9/...` needs `MSYS_NO_PATHCONV=1`, or the path is rewritten into a file path.
   - **Phase 3 evaluation:**
     - **Checks that passed:**
       - Hover spin (spins on enter, stops and keeps its angle on leave).
