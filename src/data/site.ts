@@ -39,7 +39,7 @@ export const SITE: SiteContent = {
       { name: 'Ezar H.', studentId: '5026261086', photo: '/team/ezar.jpg', focus: '62% 42%', zoom: 1, tint: '#163F52' },
       { name: 'Muhammad M.', studentId: '5026261098', photo: '/team/muhammad.jpg', focus: '52% 32%', zoom: 1, tint: '#4A0F30' },
       { name: 'Naufal R.', studentId: '5026261197', photo: '/team/naufal-yellow.jpg', focus: '50% 48%', zoom: 1.5, tint: '#0B3446' },
-      { name: 'Jessica K.', studentId: '5026261031', photo: null, focus: '50% 20%', zoom: 1, tint: '#64113F' },
+      { name: 'Jessica K.', studentId: '5026261031', photo: '/team/jessica.jpg', focus: '50% 22%', zoom: 1, tint: '#64113F' },
     ],
   },
 

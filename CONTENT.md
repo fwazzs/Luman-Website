@@ -37,7 +37,7 @@ h2: `Our Team` · group `aria-label="Team members"` · default open: index 1 (An
 | 2 | Ezar H. | 5026261086 | `team/ezar.jpg` | 62% 42% | 1 | #163F52 |
 | 3 | Muhammad M. | 5026261098 | `team/muhammad.jpg` | 52% 32% | 1 | #4A0F30 |
 | 4 | Naufal R. | 5026261197 | `team/naufal-yellow.jpg` | 50% 48% | 1.5 | #0B3446 |
-| 5 | Jessica K. | 5026261031 | null | 50% 20% | 1 | #64113F |
+| 5 | Jessica K. | 5026261031 | `team/jessica.jpg` | 50% 22% | 1 | #64113F |
 
 - Initials are derived from the name (`AM`, `AA`, …).
 - Caption on the open card: name, then `Student ID 5026261221`.
