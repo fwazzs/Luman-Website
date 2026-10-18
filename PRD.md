@@ -59,7 +59,6 @@ All copy is in `CONTENT.md`.
 
 | Item | Status |
 |---|---|
-| Link: Persona Dinda | Missing (`[LINK]` badge shown) |
 | MP4 version of the hero video (Safari < 14 / older iOS cannot play WebM) | Missing (poster shown) |
 | Sharing settings of every document link (Google Drive files and claude.ai artifacts) set to "anyone with the link" | To confirm |
 | Test phase content | After testing |

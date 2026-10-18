@@ -79,7 +79,7 @@ export const SITE: SiteContent = {
           { label: 'PERSONA · ', text: 'Dinda, 18, a vocational software-engineering student who builds projects for clients.' },
         ],
         links: [
-          { label: 'Persona Dinda', href: null, icon: 'person' },
+          { label: 'Persona Dinda', href: 'https://drive.google.com/file/d/1aKses4MIcfdFkR2dtYcVgTvtvuICa2A_/view?usp=sharing', icon: 'person' },
           { label: 'Written report: POV & HMW', href: 'https://drive.google.com/file/d/1mdllPSRCHJwUyjf6fvvWQnjL-DconcDb/view?usp=sharing', icon: 'download', primary: true },
         ],
       },
