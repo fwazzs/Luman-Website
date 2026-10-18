@@ -39,7 +39,7 @@ Text on rose is always ink (`#011C27`), never white (white on rose fails AA).
 
 | Role | Font | Spec |
 |---|---|---|
-| Display / headings | Plus Jakarta Sans 800 | Hero h1 `clamp(3.5rem, 10vw, 8.5rem)`, tracking -0.06em, leading 0.92 · Section h2 `clamp(2.25rem, 4.5vw, 3.5rem)`, tracking -0.045em · Process h2 up to 4rem |
+| Display / headings | Plus Jakarta Sans 800 | Hero h1 `clamp(2.5rem, 7vw, 6rem)`, tracking -0.06em, leading 0.92 · Section h2 `clamp(2.25rem, 4.5vw, 3.5rem)`, tracking -0.045em · Process h2 up to 4rem |
 | Body | Plus Jakarta Sans 400–700 | 17–18px, leading 1.55–1.6, max ~62ch |
 | Labels, UI, numbers | JetBrains Mono 400–700 | 11–15px; uppercase labels with 0.04–0.14em tracking |
 

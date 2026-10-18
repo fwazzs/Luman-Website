@@ -9,7 +9,7 @@ export default function HeroSection(): JSX.Element {
       <HeroVideo webm={video.webm} mp4={video.mp4} poster={video.poster} />
       <div aria-hidden="true" className="bg-hero-scrim absolute inset-0" />
       <div className="relative flex w-full max-w-[1100px] flex-col items-center gap-7 px-6 py-[120px] text-center">
-        <h1 className="w-[1202px] max-w-full font-sans text-[clamp(3.5rem,10vw,8.5rem)] leading-[0.92] font-extrabold tracking-[-0.06em] text-balance text-white">
+        <h1 className="w-[1202px] max-w-full font-sans text-[clamp(2.5rem,7vw,6rem)] leading-[0.92] font-extrabold tracking-[-0.06em] text-balance text-white">
           {headline[0]}
           <br />
           {headline[1]}
