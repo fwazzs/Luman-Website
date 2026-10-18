@@ -73,7 +73,7 @@ src/
 | 2 | Sections: header + hero · about + team · process (+ illustrations) · footer (+ ASCII logo) | ✅ 2026-10-16 (desktop + 375px checked in browser) |
 | 3 | Integrate and evaluate: build, lint, tests, 360px mobile, reduced motion, Lighthouse | ✅ 2026-10-16 (mobile median of 5: Perf 93, A11y 100, BP 96; SEO 63 by design) |
 | 4 | `/apple-design`, `/security-review`, `/code-review`, apply fixes | ✅ 2026-10-16 (see decisions log) |
-| 5 | Missing content, then deploy | ⏳ Still missing: the Persona Dinda link; the MP4 hero fallback. Already filled in: all six team photos; Empathize (2 links), Define report, Ideate (2 canvases), Prototype (1 link). |
+| 5 | Missing content, then deploy | ⏳ Still missing: the MP4 hero fallback. Already filled in: all six team photos; Define persona link; Empathize (2 links), Define report, Ideate (2 canvases), Prototype (1 link). |
 
 ## Decisions log
 

@@ -62,7 +62,7 @@ h2: `Design Thinking Process`. Status chip on every card: `DONE`.
   - `INSIGHT · ` `Fear of being replaced makes people avoid AI instead of learning it.`
   - `PERSONA · ` `Dinda, 18, a vocational software-engineering student who builds projects for clients.`
 - Links:
-  1. `Persona Dinda` → null (icon: person)
+  1. `Persona Dinda` → https://drive.google.com/file/d/1aKses4MIcfdFkR2dtYcVgTvtvuICa2A_/view?usp=sharing (icon: person)
   2. **primary** `Written report: POV & HMW` → https://drive.google.com/file/d/1mdllPSRCHJwUyjf6fvvWQnjL-DconcDb/view?usp=sharing (icon: download)
 
 ### 03 · Ideate · from 25 ideas to one site
