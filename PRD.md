@@ -59,10 +59,9 @@ All copy is in `CONTENT.md`.
 
 | Item | Status |
 |---|---|
-| Photo of Jessica | Missing (initials shown) |
 | Link: Persona Dinda | Missing (`[LINK]` badge shown) |
 | MP4 version of the hero video (Safari < 14 / older iOS cannot play WebM) | Missing (poster shown) |
-| Sharing settings of the FigJam, Canva and transcript links set to "anyone with the link" | To confirm |
+| Sharing settings of every document link (Google Drive files and claude.ai artifacts) set to "anyone with the link" | To confirm |
 | Test phase content | After testing |
 
 ## 8. Out of scope (v1)
