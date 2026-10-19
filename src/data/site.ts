@@ -22,9 +22,9 @@ export const SITE: SiteContent = {
       "AI is moving faster than anyone expected, some jobs are already being taken over, and many people don't know where to start learning. We assumed they needed a roadmap. After six interviews, we found they already use AI every day. What they haven't learned yet is how to judge whether its output is correct and safe.",
     povLabel: 'POINT OF VIEW',
     pov: {
-      before: 'Students and fresh graduates who fear being replaced by AI need to ',
-      highlight: "build the ability to direct and check AI's work",
-      after: ', because their fear makes them avoid AI, even though that ability is what protects the junior roles being cut.',
+      before: "People are stressed about AI so much because they can't find a ",
+      highlight: 'reliable source of truth',
+      after: ' to learn more about how AI works, how to use AI properly, and what AI can and cannot do.',
     },
   },
 
