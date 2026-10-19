@@ -53,6 +53,8 @@ export interface Phase {
 export interface TeamMember {
   name: string;
   studentId: string;
+  /** What the member did, summarised from the group's contribution table. */
+  role: string;
   /** Path under /public, e.g. "/team/ezar.jpg". null shows initials. */
   photo: string | null;
   /** CSS object-position that keeps the face in narrow cards. */
