@@ -52,8 +52,8 @@ h2: `Design Thinking Process`. Status chip on every card: `DONE`.
 - Quote: `“I really don't look things up... but once someone shows me, then I want to.”` — `Bryan`
 - Interviewee chips: `DEMITRIA` `NALA` `FIKRI` `BRYAN` `KAYLA` `ALVIN`
 - Links:
-  1. `Transcripts of 6 interviews` → https://claude.ai/artifact/RAde59eGLsmQddq7PjywJ1#57d6b452-09c6.mq589se0499.848 (icon: document)
-  2. **primary** `Empathy map` → https://claude.ai/artifact/RXLfgNRFEmnaWt2oJK7Qqd#page-dcb81aee8d83 (icon: grid)
+  1. `Transcripts of 6 interviews` → https://drive.google.com/drive/folders/1VKCAA6fu_ksPj1pfZAVif_BKJ0DDpcaw?usp=sharing (icon: document)
+  2. **primary** `Empathy map` → https://drive.google.com/file/d/1mpqa8tYQE5Xp7dKjZpmOntndM1LOxgjq/view?usp=sharing (icon: grid)
 
 ### 02 · Define · insight, persona & POV
 - Statement (18px/700 white): `Students and fresh graduates who fear being replaced by AI need to ` + **highlight** `build the ability to direct and check AI's work` + `.`
