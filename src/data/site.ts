@@ -57,8 +57,8 @@ export const SITE: SiteContent = {
         quote: { text: "I really don't look things up... but once someone shows me, then I want to.", author: 'Bryan' },
         chips: ['DEMITRIA', 'NALA', 'FIKRI', 'BRYAN', 'KAYLA', 'ALVIN'],
         links: [
-          { label: 'Transcripts of 6 interviews', href: 'https://claude.ai/artifact/RAde59eGLsmQddq7PjywJ1#57d6b452-09c6.mq589se0499.848', icon: 'document' },
-          { label: 'Empathy map', href: 'https://claude.ai/artifact/RXLfgNRFEmnaWt2oJK7Qqd#page-dcb81aee8d83', icon: 'grid', primary: true },
+          { label: 'Transcripts of 6 interviews', href: 'https://drive.google.com/drive/folders/1VKCAA6fu_ksPj1pfZAVif_BKJ0DDpcaw?usp=sharing', icon: 'document' },
+          { label: 'Empathy map', href: 'https://drive.google.com/file/d/1mpqa8tYQE5Xp7dKjZpmOntndM1LOxgjq/view?usp=sharing', icon: 'grid', primary: true },
         ],
       },
       {

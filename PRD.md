@@ -60,7 +60,7 @@ All copy is in `CONTENT.md`.
 | Item | Status |
 |---|---|
 | MP4 version of the hero video (Safari < 14 / older iOS cannot play WebM) | Missing (poster shown) |
-| Sharing settings of every document link (Google Drive files and claude.ai artifacts) set to "anyone with the link" | To confirm |
+| Sharing settings of every document link (Google Drive files and folder) set to "anyone with the link" | To confirm |
 | Test phase content | After testing |
 
 ## 8. Out of scope (v1)
