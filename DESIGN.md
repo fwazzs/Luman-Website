@@ -74,7 +74,7 @@ Two columns (`flex-wrap`, each `basis-[400px]`), divided by a vertical rule. Lef
   2. Halftone dots (`radial-gradient(cotton/28 1.2px, transparent 1.4px)` at 10px).
   3. Photo (`object-cover` with a per-member focus point and zoom).
   4. Initials (96px/800) when there is no photo.
-  5. On the open card only, the caption: fade from transparent to `ink/85`, name 26px/800 white, role 13px rose-text, "Student ID ##########" 13px mono cotton.
+  5. On the open card only, the caption: fade from transparent through `ink/70` to `ink/95` with a text shadow, name 26px/800 white, role 13px semibold candy, "Student ID ##########" 13px mono white.
 - Open on hover, focus or click. Default open: Anastasia.
 
 ### Design Thinking Process (Sui stack)

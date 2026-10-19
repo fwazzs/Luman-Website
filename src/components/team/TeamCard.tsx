@@ -72,13 +72,13 @@ export default function TeamCard({ member, index, open, onOpen }: TeamCardProps)
       <span
         className={
           open
-            ? 'absolute inset-x-0 bottom-0 flex flex-col gap-1 bg-linear-to-b from-ink/0 to-ink/85 px-6 pt-12 pb-[22px] text-left'
+            ? 'absolute inset-x-0 bottom-0 flex flex-col gap-1 bg-linear-to-b from-ink/0 via-ink/70 to-ink/95 px-6 pt-20 pb-[22px] [text-shadow:0_1px_6px_rgb(1_28_39/0.9)] text-left'
             : 'sr-only'
         }
       >
         <span className="font-sans text-[26px] font-extrabold tracking-[-0.03em] text-white">{name}</span>
-        <span className="text-[13px] tracking-[0.04em] text-rose-text">{role}</span>
-        <span className="text-[13px] tracking-[0.04em] text-cotton">Student ID {studentId}</span>
+        <span className="text-[13px] font-semibold tracking-[0.04em] text-candy">{role}</span>
+        <span className="text-[13px] tracking-[0.04em] text-white">Student ID {studentId}</span>
       </span>
     </button>
   );
