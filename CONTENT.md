@@ -30,17 +30,17 @@ Copy this into `src/data/site.ts` as typed data. The text is final (English, app
 
 h2: `Our Team` · group `aria-label="Team members"` · default open: index 1 (Anastasia)
 
-| # | Name | Student ID | Photo | Focus (object-position) | Zoom | Tint |
-|---|---|---|---|---|---|---|
-| 0 | Alfaira M. | 5026261221 | `team/alfaira.jpg` | 48% 42% | 1 | #0B3446 |
-| 1 | Anastasia A. | 5026261173 | `team/anastasia.jpg` | 55% 40% | 1 | #64113F |
-| 2 | Ezar H. | 5026261086 | `team/ezar.jpg` | 62% 42% | 1 | #163F52 |
-| 3 | Muhammad M. | 5026261098 | `team/muhammad.jpg` | 52% 32% | 1 | #4A0F30 |
-| 4 | Naufal R. | 5026261197 | `team/naufal-yellow.jpg` | 50% 48% | 1.5 | #0B3446 |
-| 5 | Jessica K. | 5026261031 | `team/jessica.jpg` | 50% 22% | 1 | #64113F |
+| # | Name | Student ID | Role | Photo | Focus (object-position) | Zoom | Tint |
+|---|---|---|---|---|---|---|---|
+| 0 | Alfaira M. | 5026261221 | Report support · HMW brainstorming | `team/alfaira.jpg` | 48% 42% | 1 | #0B3446 |
+| 1 | Anastasia A. | 5026261173 | Report · Prototype · Brainstorming | `team/anastasia.jpg` | 55% 40% | 1 | #64113F |
+| 2 | Ezar H. | 5026261086 | Report · Presentation · Brainstorming | `team/ezar.jpg` | 62% 42% | 1 | #163F52 |
+| 3 | Muhammad M. | 5026261098 | Prototype · Brainstorming | `team/muhammad.jpg` | 52% 32% | 1 | #4A0F30 |
+| 4 | Naufal R. | 5026261197 | Report · Presentation · Brainstorming | `team/naufal-yellow.jpg` | 50% 48% | 1.5 | #0B3446 |
+| 5 | Jessica K. | 5026261031 | Report · Brainstorming | `team/jessica.jpg` | 50% 22% | 1 | #64113F |
 
 - Initials are derived from the name (`AM`, `AA`, …).
-- Caption on the open card: name, then `Student ID 5026261221`.
+- Caption on the open card: name, role (rose, 13px), then `Student ID 5026261221`. Roles are summarised from the group's contribution table.
 - Button `aria-label`: `Alfaira M., student ID 5026261221`.
 
 ## Design Thinking Process (`#process`)

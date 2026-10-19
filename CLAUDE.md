@@ -86,7 +86,7 @@ src/
     - The hero has no buttons and no bottom rule.
   - **Prototype section** ("Try the prototype", with the glossary) removed by the user. The glossary data is kept in the canvas script only.
   - **Stats row** (6 interviews, ~40 HMW…) removed. The canvas still has an empty bordered `<section>` there; do not port it.
-  - **Team:** the accordion follows the Lovable creative-photographer template. Members show student IDs; roles are not shown. Naufal's photo is zoomed to 1.7×.
+  - **Team:** the accordion follows the Lovable creative-photographer template. Members show student IDs; roles (summarised from the contribution table, added 2026-10-19) show on the open card. Naufal's photo is zoomed to 1.7×.
   - **Process:** the stack layout follows sui.io. Test is hidden until done. Every phase card links to its documents.
   - **Footer:** a donut.c-style ASCII logo. Under it, only the wordmark (the tagline lines were removed by the user). The logo was hover-only at first; per later user feedback it spins on its own while on screen, and stops off-screen and under reduced motion.
   - **Folder name:** the project folder is `Luman`, but the product name is **Lumen**.

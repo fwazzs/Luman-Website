@@ -33,13 +33,13 @@ export const SITE: SiteContent = {
     defaultOpen: 1,
     members: [
       // Landscape photo: focus on the face (centre, slightly above middle) so narrow cards still show it.
-      { name: 'Alfaira M.', studentId: '5026261221', photo: '/team/alfaira.jpg', focus: '48% 42%', zoom: 1, tint: '#0B3446' },
+      { name: 'Alfaira M.', studentId: '5026261221', role: 'Report support · HMW brainstorming', photo: '/team/alfaira.jpg', focus: '48% 42%', zoom: 1, tint: '#0B3446' },
       // Landscape photo: focus on the face (just right of centre, upper third) so narrow cards still show it.
-      { name: 'Anastasia A.', studentId: '5026261173', photo: '/team/anastasia.jpg', focus: '55% 40%', zoom: 1, tint: '#64113F' },
-      { name: 'Ezar H.', studentId: '5026261086', photo: '/team/ezar.jpg', focus: '62% 42%', zoom: 1, tint: '#163F52' },
-      { name: 'Muhammad M.', studentId: '5026261098', photo: '/team/muhammad.jpg', focus: '52% 32%', zoom: 1, tint: '#4A0F30' },
-      { name: 'Naufal R.', studentId: '5026261197', photo: '/team/naufal-yellow.jpg', focus: '50% 48%', zoom: 1.5, tint: '#0B3446' },
-      { name: 'Jessica K.', studentId: '5026261031', photo: '/team/jessica.jpg', focus: '50% 22%', zoom: 1, tint: '#64113F' },
+      { name: 'Anastasia A.', studentId: '5026261173', role: 'Report · Prototype · Brainstorming', photo: '/team/anastasia.jpg', focus: '55% 40%', zoom: 1, tint: '#64113F' },
+      { name: 'Ezar H.', studentId: '5026261086', role: 'Report · Presentation · Brainstorming', photo: '/team/ezar.jpg', focus: '62% 42%', zoom: 1, tint: '#163F52' },
+      { name: 'Muhammad M.', studentId: '5026261098', role: 'Prototype · Brainstorming', photo: '/team/muhammad.jpg', focus: '52% 32%', zoom: 1, tint: '#4A0F30' },
+      { name: 'Naufal R.', studentId: '5026261197', role: 'Report · Presentation · Brainstorming', photo: '/team/naufal-yellow.jpg', focus: '50% 48%', zoom: 1.5, tint: '#0B3446' },
+      { name: 'Jessica K.', studentId: '5026261031', role: 'Report · Brainstorming', photo: '/team/jessica.jpg', focus: '50% 22%', zoom: 1, tint: '#64113F' },
     ],
   },
 

@@ -32,7 +32,7 @@ function initials(name: string): string {
 
 /** One portrait in the accordion. Hover, focus and click all open it. */
 export default function TeamCard({ member, index, open, onOpen }: TeamCardProps): JSX.Element {
-  const { name, studentId, photo, focus, zoom, tint } = member;
+  const { name, studentId, role, photo, focus, zoom, tint } = member;
   return (
     <button
       type="button"
@@ -77,6 +77,7 @@ export default function TeamCard({ member, index, open, onOpen }: TeamCardProps)
         }
       >
         <span className="font-sans text-[26px] font-extrabold tracking-[-0.03em] text-white">{name}</span>
+        <span className="text-[13px] tracking-[0.04em] text-rose-text">{role}</span>
         <span className="text-[13px] tracking-[0.04em] text-cotton">Student ID {studentId}</span>
       </span>
     </button>
